@@ -12,8 +12,7 @@ class EventCreationViewController: UIViewController {
 
     @IBOutlet weak var EventInfo: UITextField!
     @IBOutlet weak var EventTime: UIDatePicker!
-    
-    
+    @IBOutlet weak var TimeDisplay: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,19 +24,17 @@ class EventCreationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBAction func selectDate(sender: AnyObject) {
-        /*var dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
-        var strDate = dateFormatter.stringFromDate(EventTime.date)*/
-        print(EventTime)
-
+    @IBAction func SelectDate(sender: AnyObject) {
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+        var strDate = dateFormatter.stringFromDate(EventTime.date)
+        self.TimeDisplay.text = strDate
     }
     
     @IBAction func Submit(sender: AnyObject) {
         
         let newEvent = Event()
-        newEvent.info = EventInfo.text!
+        newEvent.info = EventInfo.text
         newEvent.date = EventTime.date
         TempAgenda.Events.append(newEvent)
         
