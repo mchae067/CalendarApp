@@ -15,6 +15,9 @@
 		433FA12C1BD5D93500FF6EB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433FA12B1BD5D93500FF6EB8 /* Images.xcassets */; };
 		433FA12F1BD5D93500FF6EB8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 433FA12D1BD5D93500FF6EB8 /* LaunchScreen.xib */; };
 		433FA13B1BD5D93500FF6EB8 /* CalendarAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FA13A1BD5D93500FF6EB8 /* CalendarAppTests.swift */; };
+		433FA14B1BDE7B7A00FF6EB8 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FA14A1BDE7B7A00FF6EB8 /* Schedule.swift */; };
+		433FA14D1BDE7B8400FF6EB8 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FA14C1BDE7B8400FF6EB8 /* Event.swift */; };
+		433FA14F1BDED92600FF6EB8 /* EventCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433FA14E1BDED92600FF6EB8 /* EventCreationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		433FA1341BD5D93500FF6EB8 /* CalendarAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		433FA1391BD5D93500FF6EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		433FA13A1BD5D93500FF6EB8 /* CalendarAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarAppTests.swift; sourceTree = "<group>"; };
+		433FA14A1BDE7B7A00FF6EB8 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		433FA14C1BDE7B8400FF6EB8 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		433FA14E1BDED92600FF6EB8 /* EventCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +89,11 @@
 			children = (
 				433FA1201BD5D93500FF6EB8 /* AppDelegate.swift */,
 				433FA1221BD5D93500FF6EB8 /* RootViewController.swift */,
-				433FA1241BD5D93500FF6EB8 /* DataViewController.swift */,
 				433FA1261BD5D93500FF6EB8 /* ModelController.swift */,
+				433FA1241BD5D93500FF6EB8 /* DataViewController.swift */,
+				433FA14E1BDED92600FF6EB8 /* EventCreationViewController.swift */,
+				433FA14A1BDE7B7A00FF6EB8 /* Schedule.swift */,
+				433FA14C1BDE7B8400FF6EB8 /* Event.swift */,
 				433FA1281BD5D93500FF6EB8 /* Main.storyboard */,
 				433FA12B1BD5D93500FF6EB8 /* Images.xcassets */,
 				433FA12D1BD5D93500FF6EB8 /* LaunchScreen.xib */,
@@ -221,6 +230,9 @@
 				433FA1231BD5D93500FF6EB8 /* RootViewController.swift in Sources */,
 				433FA1271BD5D93500FF6EB8 /* ModelController.swift in Sources */,
 				433FA1251BD5D93500FF6EB8 /* DataViewController.swift in Sources */,
+				433FA14B1BDE7B7A00FF6EB8 /* Schedule.swift in Sources */,
+				433FA14F1BDED92600FF6EB8 /* EventCreationViewController.swift in Sources */,
+				433FA14D1BDE7B8400FF6EB8 /* Event.swift in Sources */,
 				433FA1211BD5D93500FF6EB8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +363,7 @@
 				INFOPLIST_FILE = CalendarApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -361,6 +374,7 @@
 				INFOPLIST_FILE = CalendarApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -417,6 +431,7 @@
 				433FA1401BD5D93500FF6EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		433FA1411BD5D93500FF6EB8 /* Build configuration list for PBXNativeTarget "CalendarAppTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +440,7 @@
 				433FA1431BD5D93500FF6EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
