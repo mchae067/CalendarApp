@@ -26,7 +26,7 @@ class EventCreationViewController: UIViewController {
     
     @IBAction func SelectDate(sender: AnyObject) {
         var dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+        dateFormatter.dateFormat = "MM/dd/yyyy HH:mm"
         var strDate = dateFormatter.stringFromDate(EventTime.date)
         self.TimeDisplay.text = strDate
     }

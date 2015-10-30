@@ -20,7 +20,7 @@ class DataViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func toStr(date: NSDate) -> String {
         var dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+        dateFormatter.dateFormat = "MM/dd/yyyy HH:mm"
         var strDate = dateFormatter.stringFromDate(date)
         return strDate
     }
