@@ -107,15 +107,6 @@
                                     <segue destination="hzS-jB-y9W" kind="show" id="SQ5-Yh-TWf"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="RpD-TT-mUz">
-                                <rect key="frame" x="22" y="52" width="330" height="99"/>
-                                <date key="date" timeIntervalSinceReferenceDate="467591715.563088">
-                                    <!--2015-10-26 22:35:15 +0000-->
-                                </date>
-                                <connections>
-                                    <action selector="fdsjkl:" destination="nto-Eo-TF4" eventType="valueChanged" id="GoW-3G-tDK"/>
-                                </connections>
-                            </datePicker>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K0t-bB-A4y">
                                 <rect key="frame" x="51" y="205" width="272" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -130,12 +121,16 @@
                                     <segue destination="hzS-jB-y9W" kind="show" id="PdJ-K8-oeN"/>
                                 </connections>
                             </button>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="NE0-Yd-0pU">
+                                <rect key="frame" x="25" y="46" width="324" height="112"/>
+                                <date key="date" timeIntervalSinceReferenceDate="467860049.20944297">
+                                    <!--2015-10-30 01:07:29 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.93042742126503153" blue="0.77304883520133405" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06o-Kk-uq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

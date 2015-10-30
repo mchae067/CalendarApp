@@ -30,6 +30,8 @@ class EventCreationViewController: UIViewController {
         /*var dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
         var strDate = dateFormatter.stringFromDate(EventTime.date)*/
+        print(EventTime)
+
     }
     
     @IBAction func Submit(sender: AnyObject) {
@@ -37,7 +39,6 @@ class EventCreationViewController: UIViewController {
         let newEvent = Event()
         newEvent.info = EventInfo.text!
         newEvent.date = EventTime.date
-        print(self.selectDate(EventTime))
         TempAgenda.Events.append(newEvent)
         
     }
